@@ -12,6 +12,7 @@
 		28622ECC2B6BAAA50001C763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28622ECB2B6BAAA50001C763 /* Assets.xcassets */; };
 		28622ECF2B6BAAA50001C763 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28622ECE2B6BAAA50001C763 /* Preview Assets.xcassets */; };
 		28622ED62B6D1BFD0001C763 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28622ED52B6D1BFD0001C763 /* AddView.swift */; };
+		28DF41642B8A2832007184C8 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF41632B8A2832007184C8 /* ExpenseItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		28622ECB2B6BAAA50001C763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28622ECE2B6BAAA50001C763 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28622ED52B6D1BFD0001C763 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		28DF41632B8A2832007184C8 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				28622EC72B6BAAA30001C763 /* iExpenseApp.swift */,
 				28622EC92B6BAAA30001C763 /* ContentView.swift */,
 				28622ED52B6D1BFD0001C763 /* AddView.swift */,
+				28DF41632B8A2832007184C8 /* ExpenseItem.swift */,
 				28622ECB2B6BAAA50001C763 /* Assets.xcassets */,
 				28622ECD2B6BAAA50001C763 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				28622ECA2B6BAAA30001C763 /* ContentView.swift in Sources */,
 				28622EC82B6BAAA30001C763 /* iExpenseApp.swift in Sources */,
 				28622ED62B6D1BFD0001C763 /* AddView.swift in Sources */,
+				28DF41642B8A2832007184C8 /* ExpenseItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
