@@ -33,29 +33,17 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     @State private var showAddView = false
-    @Query(sort: \ExpenseItem.amount) var expenses: [ExpenseItem]
+    
+    @State private var showPersonalExpenses = false
     
     var body: some View {
         NavigationStack{
             VStack{
                 List{
-                    Text("Business Expenses")
+                    Text("Expenses")
                         .font(.headline.bold())
                         .underline()
-                    ForEach(expenses){ item in
-                        HStack{
-                            VStack(alignment: .leading){
-                                Text(item.name)
-                                    .font(.headline)
-                                
-                                Text(item.type)
-                            }
-                            Spacer()
-                            
-                            Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
-                                .foregroundStyle(item.amount < 100000 ? .green : (item.amount < 1000000 ? .orange : .red))
-                        }
-                    }
+                    ExpensesView(neededType: showPersonalExpenses ? "Personal" : "Business")
 //                    .onDelete(perform: removeItems)
                 }
                 
@@ -89,6 +77,9 @@ struct ContentView: View {
 //                    Button("Add Expense", systemImage: "plus"){
 //                        showAddView = true
 //                    }
+                }
+                Button(showPersonalExpenses ? "Business" : "Personal"){
+                    showPersonalExpenses.toggle()
                 }
             }
             .navigationBarBackButtonHidden()
