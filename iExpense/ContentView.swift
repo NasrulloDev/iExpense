@@ -33,7 +33,7 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     @State private var showAddView = false
-    @Query var expenses: [ExpenseItem]
+    @Query(sort: \ExpenseItem.amount) var expenses: [ExpenseItem]
     
     var body: some View {
         NavigationStack{
